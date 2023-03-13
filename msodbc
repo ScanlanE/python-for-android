@@ -1,0 +1,8 @@
+wget https://go.microsoft.com/fwlink/?linkid=2137200 -O msodbcsql-18.7.1.0.tar.gz
+
+tar -xvf msodbcsql-18.7.1.0.tar.gz
+
+cd msodbcsql-18.7.1.0
+sudo ./install.sh install --accept-license --force --remove-previous-BUILD_PYTHON_VERSION
+
+sudo apt-get update && sudo apt-get install -y msodbcsql-dev
